@@ -1,0 +1,20 @@
+{
+  "name": "@vsafe/gateway",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node dist/main.js",
+    "dev": "tsx watch src/main.ts"
+  },
+  "dependencies": {
+    "@vsafe/contracts": "*",
+    "@vsafe/platform": "*",
+    "@nestjs/common": "^11.1.0",
+    "@nestjs/core": "^11.1.0",
+    "@nestjs/swagger": "^11.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^17.2.0"
+  }
+}

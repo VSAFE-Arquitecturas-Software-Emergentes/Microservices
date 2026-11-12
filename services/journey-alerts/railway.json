@@ -1,0 +1,22 @@
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "build": {
+    "builder": "RAILPACK",
+    "buildCommand": "node scripts/build-service.mjs journey-alerts",
+    "watchPatterns": [
+      "/services/journey-alerts/**",
+      "/packages/platform/**",
+      "/packages/contracts/**",
+      "/scripts/migrate.mjs",
+      "/package*.json",
+      "/tsconfig.base.json"
+    ]
+  },
+  "deploy": {
+    "preDeployCommand": "node scripts/migrate.mjs journey-alerts",
+    "startCommand": "npm run start -w @vsafe/journey-alerts",
+    "healthcheckPath": "/health/ready",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 5
+  }
+}

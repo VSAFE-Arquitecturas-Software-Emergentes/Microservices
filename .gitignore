@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+.env.*.local
+.local/
+coverage/
+test-results/
+playwright-report/
+packages/blockchain/artifacts/
+packages/blockchain/cache/
+*.log
+repositories/
+
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*

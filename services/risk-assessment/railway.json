@@ -1,0 +1,23 @@
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "build": {
+    "builder": "RAILPACK",
+    "buildCommand": "node scripts/build-service.mjs risk-assessment",
+    "watchPatterns": [
+      "/services/risk-assessment/**",
+      "/packages/platform/**",
+      "/packages/contracts/**",
+      "/packages/models/**",
+      "/scripts/migrate.mjs",
+      "/package*.json",
+      "/tsconfig.base.json"
+    ]
+  },
+  "deploy": {
+    "preDeployCommand": "node scripts/migrate.mjs risk-assessment",
+    "startCommand": "npm run start -w @vsafe/risk-assessment",
+    "healthcheckPath": "/health/ready",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 5
+  }
+}

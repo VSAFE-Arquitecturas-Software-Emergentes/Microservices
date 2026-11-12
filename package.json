@@ -1,0 +1,36 @@
+{
+  "name": "vsafe",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "services/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "build": "node scripts/workspaces.mjs build",
+    "typecheck": "node scripts/workspaces.mjs typecheck",
+    "test": "node scripts/test.mjs",
+    "test:integration": "node scripts/integration.mjs",
+    "test:load": "node scripts/load.mjs",
+    "preview:local": "node scripts/start-preview.mjs",
+    "format:check": "prettier --check services packages scripts tests docs *.json *.md --ignore-unknown",
+    "dev": "node scripts/dev.mjs",
+    "setup": "node scripts/setup.mjs",
+    "db:migrate": "node scripts/migrate.mjs",
+    "db:seed": "node scripts/seed.mjs",
+    "model:train": "node scripts/train-model.mjs",
+    "chain:node": "npm run node -w @vsafe/blockchain",
+    "chain:deploy": "npm run deploy -w @vsafe/blockchain",
+    "pretest": "npm run build -w @vsafe/contracts && npm run build -w @vsafe/platform"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "onnx-proto": "^8.0.1",
+    "prettier": "^3.10.0",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.3"
+  }
+}

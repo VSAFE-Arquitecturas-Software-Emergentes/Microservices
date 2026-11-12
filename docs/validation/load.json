@@ -1,0 +1,12 @@
+{
+  "testedAt": "2026-11-12T04:33:17.648Z",
+  "environment": "native local demo",
+  "sessions": 50,
+  "requests": 50,
+  "arrivalRatePerSecond": 5,
+  "incidentRows": 18,
+  "p95ms": 44.1182,
+  "p99ms": 94.17700000000013,
+  "successRate": 1,
+  "scope": "Synthetic routes and small demo dataset. Not the 100000-incident full pilot or external Mapbox performance."
+}

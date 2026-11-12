@@ -1,0 +1,15 @@
+{
+  "version": "synthetic-logistic-v1",
+  "featureSchema": "vsafe-risk-v1",
+  "features": ["density", "severeRatio", "recentRatio", "night", "coverage"],
+  "sha256": "1c1614a87cfeb2fba76eee451f4160aaade7ef2c0eaa3c4339e56a17949505e7",
+  "trainingData": "synthetic",
+  "validated": true,
+  "validationScope": "demonstration-only",
+  "seed": 728,
+  "trainRows": 2400,
+  "testRows": 600,
+  "testAccuracy": 0.705,
+  "thresholds": [0.35, 0.65],
+  "limitations": "No real-world safety validity. Production mode must abstain."
+}

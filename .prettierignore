@@ -1,0 +1,11 @@
+.local/
+node_modules/
+**/dist/
+packages/blockchain/artifacts/
+packages/blockchain/cache/
+test-results/
+playwright-report/
+package-lock.json
+*.onnx
+*.png
+repositories/

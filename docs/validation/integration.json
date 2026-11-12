@@ -1,0 +1,62 @@
+{
+  "testedAt": "2026-11-12T04:33:46.169Z",
+  "environment": "isolated native demo",
+  "results": [
+    {
+      "name": "CSRF enforced",
+      "status": "passed"
+    },
+    {
+      "name": "Routes work without evidence and abstain",
+      "status": "passed"
+    },
+    {
+      "name": "Journey creation idempotent and conflicting payload rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Cross-session access denied",
+      "status": "passed"
+    },
+    {
+      "name": "Report idempotency and spatial duplicate detection",
+      "status": "passed"
+    },
+    {
+      "name": "Audit ownership enforced",
+      "status": "passed"
+    },
+    {
+      "name": "RabbitMQ projection feeds real ONNX inference",
+      "status": "passed"
+    },
+    {
+      "name": "Missing sequence reconciles from a consistent producer snapshot",
+      "status": "passed"
+    },
+    {
+      "name": "SSE delivered through gateway and acknowledged",
+      "status": "passed"
+    },
+    {
+      "name": "Solidity transaction anchors and verifies actual record commitment",
+      "status": "passed"
+    },
+    {
+      "name": "Modified record detected against blockchain",
+      "status": "passed"
+    },
+    {
+      "name": "Stale route update rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Database roles cannot connect to another service database",
+      "status": "passed"
+    },
+    {
+      "name": "Journey closure and event propagation",
+      "status": "passed"
+    }
+  ]
+}
